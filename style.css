@@ -606,39 +606,42 @@ nav ul li:hover::after {
 /* Responsive adjustments for larger tablets and screens up to 1024px */
 @media (max-width: 1024px) {
     .explore-btn {
-        left: 10px; /* Align the button from the left side */
-        top: 105%;
+        left: 50%; /* Center the button horizontally */
+        transform: translateX(-50%); /* Adjust for the button's width */
+        top: 105%; /* Adjust vertical positioning as needed */
         width: 120px; /* Adjust size */
         height: 120px; /* Adjust size */
         font-size: 14px; /* Reduce font size */
         margin-right: 0; /* Reset margin-right */
-        margin-left: 10px; /* Add margin-left to create spacing from left edge */
+        margin-left: 0; /* Remove margin-left */
     }
 }
 
 /* Responsive adjustments for tablets and screens up to 768px */
 @media (max-width: 768px) {
     .explore-btn {
-        left: 15px; /* Align the button from the left side */
-        top: 100%;
+        left: 50%; /* Center the button horizontally */
+        transform: translateX(-50%); /* Adjust for the button's width */
+        top: 100%; /* Adjust vertical positioning as needed */
         width: 100px; /* Further adjust size */
         height: 100px; /* Further adjust size */
         font-size: 12px; /* Further reduce font size */
         margin-right: 0; /* Reset margin-right */
-        margin-left: 15px; /* Add margin-left to create spacing from left edge */
+        margin-left: 0; /* Remove margin-left */
     }
 }
 
 /* Responsive adjustments for very small mobile phones up to 480px */
 @media (max-width: 480px) {
     .explore-btn {
-        left: 10px; /* Align the button from the left side */
-        top: 78%;
+        left: 50%; /* Center the button horizontally */
+        transform: translateX(-50%); /* Adjust for the button's width */
+        top: 80%; /* Adjust vertical positioning as needed */
         width: 80px; /* Further reduce size */
         height: 80px; /* Further reduce size */
         font-size: 10px; /* Further reduce font size */
         margin-right: 0; /* Reset margin-right */
-        margin-left: 10px; /* Add margin-left to create spacing from left edge */
+        margin-left: 0; /* Remove margin-left */
     }
 }
 
@@ -1325,7 +1328,7 @@ h3 {
 
     .icon img {
         width: 18%; /* Further reduce icon size */
-        height: 40px; /* Adjust height */
+        height: 55px; /* Adjust height */
     }
 
     h3 {
@@ -1463,7 +1466,7 @@ h3 {
 
     .icon2 img {
         width: 18%; /* Further reduce icon size */
-        height: 40px; /* Adjust height */
+        height: 55px; /* Adjust height */
     }
 
     h3 {
