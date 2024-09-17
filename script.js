@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const counters = document.querySelectorAll('.count');
 
+function startCounting() {
     counters.forEach(counter => {
-        // Set the initial value to 0
+        // Reset the initial value to 0
         counter.innerText = '0';
 
         const updateCounter = () => {
@@ -41,3 +42,10 @@ const counters = document.querySelectorAll('.count');
 
         updateCounter();
     });
+}
+
+// Start the counting and repeat every 5 seconds
+startCounting();
+setInterval(() => {
+    startCounting();
+}, 3000);
