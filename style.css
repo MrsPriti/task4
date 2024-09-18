@@ -1881,3 +1881,631 @@ h3 {
         right: 0; /* Adjust image position */
     }
 }
+
+.team-section {
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .heading-subtitle {
+    color: #00ff9c; /* Neon green color */
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .heading-subtitle span {
+    position: relative;
+  }
+  
+  .heading-subtitle span::before {
+  
+    position: absolute;
+    left: -40px;
+    top: 0;
+    color: #00ff9c;
+    font-size: 24px;
+  }
+  
+  .main-heading {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .main-heading {
+      font-size: 32px;
+    }
+    .heading-subtitle {
+      font-size: 16px;
+    }
+    .heading-subtitle span::before {
+      font-size: 20px;
+      left: -35px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .main-heading {
+      font-size: 28px;
+    }
+    .heading-subtitle {
+      font-size: 15px;
+    }
+    .heading-subtitle span::before {
+      font-size: 18px;
+      left: -30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 24px;
+    }
+    .heading-subtitle {
+      font-size: 14px;
+    }
+    .heading-subtitle span::before {
+      font-size: 16px;
+      left: -25px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .main-heading {
+      font-size: 20px;
+    }
+    .heading-subtitle {
+      font-size: 13px;
+    }
+    .heading-subtitle span::before {
+      font-size: 14px;
+      left: -20px;
+    }
+  }
+
+
+  .profile-container12 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px; /* 40px for top/bottom, 20px for left/right */
+    background-color: #000;
+}
+/* Responsive for tablets (768px and below) */
+@media (max-width: 768px) {
+    .profile-container12 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+        gap: 15px;
+    }
+}
+
+/* Responsive for mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .profile-container12 {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+}
+.profile-card12 {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    width: 230px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 110%;
+    height: 250px;
+    object-fit: cover;
+}
+
+h3 {
+    padding-top: 20px;
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.arrow12 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.profile-card12:hover .arrow {
+    color: #00ff7f;
+}
+
+/* Hidden "View Details" text */
+.view-details {
+    position: absolute;
+    bottom: 10%; /* Adjust this to create space for the social icons below */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color:#000;
+    color: #3ae090;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+    text-decoration: none; /* Initially no underline */
+}
+
+/* Make "View Details" visible on hover */
+.profile-card12:hover .view-details {
+    opacity: 1;
+    bottom: 20%;
+    text-decoration: underline; /* Add underline when visible */
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space between View Details and social icons */
+    position: absolute;
+    bottom: 5%; /* Position just below "View Details" */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    background-color: #000;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #3ae090; /* Color change on hover */
+}
+
+/* Show icons on hover */
+.profile-card12:hover .social-icons {
+    opacity: 1;
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .profile-card12 {
+        width: 180px;
+        padding: 15px;
+    }
+
+    .profile-img {
+        height: 200px;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .view-details {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .social-icons i {
+        font-size: 16px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .profile-card12 {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .profile-img {
+        height: 150px;
+    }
+
+    h3 {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .view-details {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .social-icons i {
+        font-size: 14px;
+    }
+}
+
+.why-choose-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #000;
+    position: relative;
+    margin-left: 0;
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .why-choose-us {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center; /* Center-align text for better readability */
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .why-choose-us {
+        padding: 30px;
+        text-align: center;
+    }
+}
+.content-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px; /* Adjust gap if needed */
+    position: relative;
+}
+
+.left-container {
+    flex: 1;
+    color: white;
+    margin-left: 0;
+}
+
+.section-title {
+    color: #3ae090;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-title {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(86, 85, 85);
+    transition: border-bottom-color 0.3s ease;
+}
+
+.feature h3:hover {
+    border-bottom-color: white;
+}
+
+.feature h3::before {
+    content: ">";
+    margin-right: 10px;
+    font-size: 30px;
+    color: #3ae090;
+    display: inline-block;
+}
+
+.feature p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap on smaller screens */
+    }
+
+    .main-title {
+        font-size: 36px; /* Smaller font size for titles */
+    }
+
+    .features {
+        grid-template-columns: 1fr; /* Stack features in a single column */
+        gap: 20px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .content-container {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 28px; /* Further reduce title size */
+        margin: 15px 0;
+    }
+
+    .features {
+        grid-template-columns: 1fr; /* Single column for features */
+        gap: 15px;
+    }
+
+    .feature h3 {
+        font-size: 16px;
+    }
+
+    .feature p {
+        font-size: 13px;
+    }
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 350px; /* Adjust based on your design */
+}
+
+.semi-donut {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 50px solid transparent;
+    border-top-color: #3ae090;
+    border-right-color: #3ae090;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
+    top: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.semi-donut::before {
+    content: "";
+    position: absolute;
+    left: -50px; /* Adjust based on your image and design */
+    top: -50px;
+    width: 350px;
+    height: 350px;
+    background-image: url('why-choose-right.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.semi-donut-text-svg {
+    position: absolute;
+    z-index: 2;
+    width: 80%; /* Ensure the SVG covers the full width of the semi-donut */
+    height: 70%;
+    top: -60px; /* Moves the SVG text upwards */
+    display: flex;
+    justify-content: center;
+}
+
+.semi-donut-text-svg text {
+    fill: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 350px; /* Adjust based on your design */
+}
+
+.semi-donut {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 50px solid transparent;
+    border-top-color: #3ae090;
+    border-right-color: #3ae090;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
+    top: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.semi-donut::before {
+    content: "";
+    position: absolute;
+    left: -50px; /* Adjust based on your image and design */
+    top: -50px;
+    width: 350px;
+    height: 350px;
+    background-image: url('why-choose-right.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.semi-donut-text-svg {
+    position: absolute;
+    z-index: 2;
+    width: 80%; /* Ensure the SVG covers the full width of the semi-donut */
+    height: 70%;
+    top: -50px; /* Moves the SVG text upwards */
+    display: flex;
+    justify-content: center;
+}
+
+.semi-donut-text-svg text {
+    fill:black;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .right-container {
+        width: 250px; /* Reduce container width */
+    }
+
+    .semi-donut {
+        width: 250px;
+        height: 250px;
+        border-width: 40px; /* Reduce border size for smaller donuts */
+    }
+
+    .semi-donut::before {
+        width: 250px;
+        height: 250px;
+        left: -40px; /* Adjust based on new dimensions */
+        top: -40px;
+    }
+
+    .semi-donut-text-svg {
+        width: 70%;
+        height: 60%;
+        top: -40px; /* Adjust the positioning */
+    }
+
+    .semi-donut-text-svg text {
+        font-size: 30px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .right-container {
+        width: 200px; /* Further reduce container width */
+    }
+
+    .semi-donut {
+        width: 200px;
+        height: 200px;
+        border-width: 30px; /* Reduce border size for mobile devices */
+    }
+
+    .semi-donut::before {
+        width: 200px;
+        height: 200px;
+        left: -30px;
+        top: -30px;
+    }
+
+    .semi-donut-text-svg {
+        width: 60%;
+        height: 50%;
+        top: -30px;
+    }
+
+    .semi-donut-text-svg text {
+        font-size: 24px; /* Adjust font size for mobile screens */
+    }
+}
+
+
+.pricing-package {
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+}
+
+/* Subtitle Style */
+.subtitle {
+    color: #3ae090;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Main Title Style */
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+   
+    width: 50%; /* Adjust this as needed */
+    margin: 0 auto; /* Center the text */
+    word-wrap: break-word; /* Ensures long words break if necessary */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .main-title {
+        font-size: 28px;
+        width: 80%; /* Make the title take more space */
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .pricing-package {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    .main-title {
+        font-size: 22px;
+        width: 100%; /* Full width for mobile */
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .pricing-package {
+        padding: 10px;
+    }
+}
