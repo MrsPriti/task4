@@ -2457,7 +2457,7 @@ p {
 }
 
 /* Subtitle Style */
-.subtitle {
+.subtitle2 {
     color: #3ae090;
     font-size: 16px;
     font-weight: bold;
@@ -2466,7 +2466,7 @@ p {
 }
 
 /* Main Title Style */
-.main-title {
+.main-title2 {
     font-size: 36px;
     font-weight: bold;
     color: #fff;
@@ -2480,12 +2480,12 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
     /* For tablets and smaller screens */
-    .main-title {
+    .main-title2 {
         font-size: 28px;
         width: 80%; /* Make the title take more space */
     }
 
-    .subtitle {
+    .subtitle2 {
         font-size: 14px;
     }
 
