@@ -2509,3 +2509,168 @@ p {
         padding: 10px;
     }
 }
+
+
+.pricing-section {
+    display: flex;
+    flex-direction: row; /* Aligns the cards horizontally */
+    gap: 50px; /* Adds space between the cards */
+    justify-content: center; /* Centers the cards in the container */
+    align-items: stretch; /* Aligns the cards to be of equal height */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 20px;
+    background-color: #000;
+}
+
+.pricing-card {
+    background-color: #0A1019;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment of content inside the card */
+    justify-content: space-between; /* Spreads content evenly inside the card */
+    position: relative; /* Allows positioning of child elements */
+    transition: box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for the hover effect */
+    border: 1px solid transparent; /* Initial border state for transition */
+}
+
+.pricing-card:hover {
+    border: 1px solid #55E6A5; /* Light border on hover */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for light effect */
+}
+
+.pricing-card .popular-label {
+    position: absolute;
+    top: -20px; /* Distance from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the label horizontally */
+    background-color:#55E6A5; /* Background color for the label */
+    color: #000; /* Text color */
+    padding: 5px 10px;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1; /* Ensures the label is on top of other content */
+    display: none; /* Hide the label by default */
+    width: 101%;
+}
+
+.pricing-card.silver-package .popular-label {
+    display: block; /* Show the label for Silver Package */
+}
+
+.pricing-card:hover .popular-label {
+    display: block; /* Show the label on hover */
+}
+
+.pricing-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.pricing-card .price span {
+    font-size: 1.8rem;
+}
+
+.pricing-card .services {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #dddddd;
+    line-height: 2; /* Adjusts the spacing between list items */
+    text-align: left;
+    list-style: none; /* Removes default bullet points */
+    padding-left: 0; /* Removes extra padding */
+}
+
+.pricing-card .services li {
+    display: flex;
+    align-items: center; /* Vertically centers the icon and text */
+    margin-bottom: 10px; /* Adds space between each service */
+}
+
+.pricing-card .services li i {
+    color: #55E6A5; /* Icon color */
+    margin-right: 10px; /* Adds space between the icon and text */
+    font-size: 1rem; /* Adjusts icon size */
+    background-color: #0A1019; /* Background color for the circle */
+    border: 1px solid #55E6A5; /* Border around the circle */
+    border-radius: 50%; /* Makes the icon a perfect circle */
+    padding: 10px; /* Controls the size of the circle */
+    width: 20px; /* Fixes the width of the icon container */
+    height: 20px; /* Fixes the height of the icon container */
+    display: flex; /* Aligns the icon inside the circle */
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+}
+
+.pricing-card .choose-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pricing-card .choose-btn:hover {
+    background-color: #55E6A5;
+    color: #000;
+}
+
+.icon3 {
+    display: flex; /* Allows for proper alignment */
+    align-items: center; /* Vertically centers the icon with any text/content */
+}
+
+.icon3 img {
+    width: 20%; /* Reduced width */
+    height: 60px; /* Reduced height */
+    filter: brightness(0) saturate(100%) invert(76%) sepia(23%) saturate(643%) hue-rotate(115deg) brightness(92%);
+    margin-right: 10px; /* Adds spacing between the icon and the content on the right */
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .pricing-section {
+        gap: 20px; /* Smaller gap on smaller screens */
+    }
+
+    .pricing-card {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Removes the max-width */
+    }
+
+    .pricing-card .price {
+        font-size: 2rem; /* Adjusts font size for smaller screens */
+    }
+
+    .pricing-card .price span {
+        font-size: 1.5rem; /* Adjusts font size for smaller screens */
+    }
+
+    .pricing-card .services {
+        font-size: 0.9rem; /* Adjusts font size for smaller screens */
+    }
+
+    .pricing-card .services li i {
+        width: 15px; /* Adjusts icon size for smaller screens */
+        height: 15px; /* Adjusts icon size for smaller screens */
+        padding: 8px; /* Adjusts padding for smaller screens */
+    }
+
+    .icon3 img {
+        width: 30%; /* Adjusts width for smaller screens */
+        height: auto; /* Adjusts height proportionally */
+    }
+}
