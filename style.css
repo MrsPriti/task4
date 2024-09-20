@@ -2522,7 +2522,7 @@ p {
     background-color: #000;
 }
 
-.pricing-card {
+.pricing-card44 {
     background-color: #0A1019;
     border-radius: 10px;
     padding: 20px;
@@ -2537,12 +2537,12 @@ p {
     border: 1px solid transparent; /* Initial border state for transition */
 }
 
-.pricing-card:hover {
+.pricing-card44:hover {
     border: 1px solid #55E6A5; /* Light border on hover */
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for light effect */
 }
 
-.pricing-card .popular-label {
+.pricing-card44 .popular-label {
     position: absolute;
     top: -20px; /* Distance from the top */
     left: 50%;
@@ -2558,32 +2558,32 @@ p {
     width: 101%;
 }
 
-.pricing-card.silver-package .popular-label {
+.pricing-card44.silver-package .popular-label {
     display: block; /* Show the label for Silver Package */
 }
 
-.pricing-card:hover .popular-label {
+.pricing-card44:hover .popular-label {
     display: block; /* Show the label on hover */
 }
 
-.pricing-card h2 {
+.pricing-card44 h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
     color: #ffffff;
 }
 
-.pricing-card .price {
+.pricing-card44 .price {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: white;
 }
 
-.pricing-card .price span {
+.pricing-card44 .price span {
     font-size: 1.8rem;
 }
 
-.pricing-card .services {
+.pricing-card44 .services44 {
     margin-bottom: 20px;
     font-size: 1rem;
     color: #dddddd;
@@ -2593,13 +2593,13 @@ p {
     padding-left: 0; /* Removes extra padding */
 }
 
-.pricing-card .services li {
+.pricing-card44 .services44 li {
     display: flex;
     align-items: center; /* Vertically centers the icon and text */
     margin-bottom: 10px; /* Adds space between each service */
 }
 
-.pricing-card .services li i {
+.pricing-card44 .services44 li i {
     color: #55E6A5; /* Icon color */
     margin-right: 10px; /* Adds space between the icon and text */
     font-size: 1rem; /* Adjusts icon size */
@@ -2614,7 +2614,7 @@ p {
     align-items: center; /* Centers the icon vertically */
 }
 
-.pricing-card .choose-btn {
+.pricing-card44 .choose-btn {
     background-color: black;
     color: white;
     border: none;
@@ -2624,17 +2624,17 @@ p {
     font-size: 1rem;
 }
 
-.pricing-card .choose-btn:hover {
+.pricing-card44 .choose-btn:hover {
     background-color: #55E6A5;
     color: #000;
 }
 
-.icon4 {
+.icon44 {
     display: flex; /* Allows for proper alignment */
     align-items: center; /* Vertically centers the icon with any text/content */
 }
 
-.icon4 img {
+.icon44 img {
     width: 20%; /* Reduced width */
     height: 60px; /* Reduced height */
     filter: brightness(0) saturate(100%) invert(76%) sepia(23%) saturate(643%) hue-rotate(115deg) brightness(92%);
@@ -2646,30 +2646,30 @@ p {
         gap: 20px; /* Smaller gap on smaller screens */
     }
 
-    .pricing-card {
+    .pricing-card44 {
         width: 100%; /* Full width on smaller screens */
         max-width: none; /* Removes the max-width */
     }
 
-    .pricing-card .price {
+    .pricing-card44 .price {
         font-size: 2rem; /* Adjusts font size for smaller screens */
     }
 
-    .pricing-card .price span {
+    .pricing-card44 .price span {
         font-size: 1.5rem; /* Adjusts font size for smaller screens */
     }
 
-    .pricing-card .services {
+    .pricing-card44 .services {
         font-size: 0.9rem; /* Adjusts font size for smaller screens */
     }
 
-    .pricing-card .services li i {
+    .pricing-card44 .services li i {
         width: 15px; /* Adjusts icon size for smaller screens */
         height: 15px; /* Adjusts icon size for smaller screens */
         padding: 8px; /* Adjusts padding for smaller screens */
     }
 
-    .icon3 img {
+    .icon44 img {
         width: 30%; /* Adjusts width for smaller screens */
         height: auto; /* Adjusts height proportionally */
     }
