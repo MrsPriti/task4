@@ -2674,3 +2674,117 @@ p {
         height: auto; /* Adjusts height proportionally */
     }
 }
+
+
+
+.skills45-wrapper {
+    overflow: hidden; /* Hide the overflow content */
+    white-space: nowrap; /* Prevent wrapping of the text */
+    position: relative;
+    background-color: #66e0a3; /* Green background now applied here */
+    height: 130px; /* Set height for the container */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center the content */
+}
+
+.skills45 {
+    display: inline-block;
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: scroll 15s linear infinite; /* Scroll the entire container */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move all the way to the left */
+    }
+}
+
+.skill45 {
+    display: inline-block;
+    margin-right: 50px; /* Space between each skill */
+}
+
+.icon45 {
+    font-size: 5rem; /* Increase icon size */
+    font-weight: bold;
+    color: #000;
+    
+}
+
+
+.text45 {
+    font-size: 3rem; /* Adjust text size */
+    font-weight: normal;
+    color: #000;
+    align-items: center; /* Ensure the text aligns to the center */
+}
+
+@media (max-width: 1024px) {
+    .skills45-wrapper {
+        height: 110px; /* Reduce height */
+    }
+
+    .icon45 {
+        font-size: 4rem; /* Reduce icon size */
+    }
+
+    .text45 {
+        font-size: 2.5rem; /* Reduce text size */
+    }
+
+    .skill45 {
+        margin-right: 30px; /* Reduce space between each skill */
+    }
+
+    .skills45 {
+        animation: scroll 25s linear infinite; /* Speed up scrolling to adjust for reduced screen size */
+    }
+}
+@media (max-width: 768px) {
+    .skills45-wrapper {
+        height: 90px; /* Further reduce height */
+    }
+
+    .icon45 {
+        font-size: 3rem; /* Further reduce icon size */
+    }
+
+    .text45 {
+        font-size: 2rem; /* Further reduce text size */
+    }
+
+    .skill45 {
+        margin-right: 20px; /* Further reduce space between each skill */
+    }
+
+    .skills45 {
+        animation: scroll 20s linear infinite; /* Further speed up scrolling for smaller screen sizes */
+    }
+}
+@media (max-width: 480px) {
+    .skills45-wrapper {
+        height: 70px; /* Smallest height */
+    }
+
+    .icon45 {
+        font-size: 2.5rem; /* Smallest icon size */
+    }
+
+    .text45 {
+        font-size: 1.5rem; /* Smallest text size */
+    }
+
+    .skill45 {
+        margin-right: 15px; /* Smallest space between each skill */
+    }
+
+    .skills45 {
+        animation: scroll 15s linear infinite; /* Further speed up scrolling for extra small screens */
+    }
+}
+
