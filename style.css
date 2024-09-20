@@ -2629,12 +2629,12 @@ p {
     color: #000;
 }
 
-.icon3 {
+.icon4 {
     display: flex; /* Allows for proper alignment */
     align-items: center; /* Vertically centers the icon with any text/content */
 }
 
-.icon3 img {
+.icon4 img {
     width: 20%; /* Reduced width */
     height: 60px; /* Reduced height */
     filter: brightness(0) saturate(100%) invert(76%) sepia(23%) saturate(643%) hue-rotate(115deg) brightness(92%);
