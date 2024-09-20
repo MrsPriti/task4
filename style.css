@@ -2807,6 +2807,14 @@ p {
     align-items: center;
 }
 
+.testimonial-image {
+    width: 100%; /* Adjust width according to your design */
+    max-width: 350px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0%; /* If you want it circular */
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
 
 .testimonial-right {
     width: 50%;
@@ -2874,64 +2882,71 @@ blockquote p{
     cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-
     .testimonial-left, .testimonial-right {
-        width: 100%;
+        width: 100%; /* Stack images and text on smaller screens */
+        padding: 10px;
     }
 
     .testimonial-right {
-        padding-left: 0;
-        padding-top: 20px;
+        padding-left: 0; /* Remove extra padding on small screens */
+        text-align: center; /* Center-align the text */
     }
 
     blockquote p {
-        font-size: 1.4rem;
-        text-align: center;
+        font-size: 1.4rem; /* Slightly reduce text size */
     }
 
-    .author-info {
-        justify-content: center;
+    .author-details h4 {
+        font-size: 1rem; /* Adjust font size for the author */
     }
 
-    .author-details h4, .author-details p {
-        text-align: center;
-    }
-
-    .navigation {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .testimonial-container {
-        padding: 20px 15px;
-    }
-
-    blockquote p {
-        font-size: 1.2rem;
-    }
-
-    .author-image {
-        width: 40px;
-        height: 40px;
+    .author-details p {
+        font-size: 0.8rem;
     }
 
     .star {
         font-size: 1.3rem;
     }
+}
 
-    .prev, .next {
-        font-size: 1.6rem;
-        padding: 0 15px;
+/* For mobile screens */
+@media (max-width: 480px) {
+    .testimonial-container {
+        padding: 20px; /* Reduce padding for mobile */
     }
 
-    .dots {
+    .testimonial-image {
+        max-width: 250px; /* Smaller image size on mobile */
+    }
+
+    blockquote p {
+        font-size: 1.2rem; /* Further reduce text size */
+    }
+
+    .author-info {
+        flex-direction: column; /* Stack the author image and details */
+        align-items: center;
+    }
+
+    .author-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .author-details h4 {
         font-size: 1rem;
+    }
+
+    .author-details p {
+        font-size: 0.8rem;
+    }
+
+    .star {
+        font-size: 1.2rem;
+    }
+
+    .prev, .next {
+        font-size: 1.5rem;
     }
 }
