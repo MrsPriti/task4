@@ -2873,3 +2873,65 @@ blockquote p{
     margin: 0 5px;
     cursor: pointer;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .testimonial-left, .testimonial-right {
+        width: 100%;
+    }
+
+    .testimonial-right {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    blockquote p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .author-info {
+        justify-content: center;
+    }
+
+    .author-details h4, .author-details p {
+        text-align: center;
+    }
+
+    .navigation {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-container {
+        padding: 20px 15px;
+    }
+
+    blockquote p {
+        font-size: 1.2rem;
+    }
+
+    .author-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .star {
+        font-size: 1.3rem;
+    }
+
+    .prev, .next {
+        font-size: 1.6rem;
+        padding: 0 15px;
+    }
+
+    .dots {
+        font-size: 1rem;
+    }
+}
