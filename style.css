@@ -2799,6 +2799,28 @@ p {
     margin: 0 auto;
     background-color: #000;
 }
+@media (max-width: 1024px) {
+    .testimonial-container {
+        padding: 40px;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 30px;
+        max-width: 600px;
+        flex-direction: column; /* Stack content vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
 
 .testimonial-left {
     width: 50%;
@@ -2813,6 +2835,38 @@ p {
     height: auto; /* Maintain aspect ratio */
     border-radius: 0%; /* If you want it circular */
     object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .testimonial-left {
+        width: 60%; /* Slightly increase width on tablet */
+    }
+
+    .testimonial-image {
+        max-width: 300px; /* Decrease max width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-left {
+        width: 100%; /* Increase width on smaller screens */
+    }
+
+    .testimonial-image {
+        max-width: 250px; /* Further reduce image size for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-left {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .testimonial-image {
+        max-width: 250px; /* Smaller image size on mobile */
+        border-radius: 100%; /* Make the image circular for a nicer effect */
+    }
 }
 
 
@@ -2882,56 +2936,20 @@ blockquote p{
     cursor: pointer;
 }
 
+/* Adjust layout for mobile */
 @media (max-width: 768px) {
-    .testimonial-left, .testimonial-right {
-        width: 100%; /* Stack images and text on smaller screens */
-        padding: 10px;
-    }
-
     .testimonial-right {
-        padding-left: 0; /* Remove extra padding on small screens */
-        text-align: center; /* Center-align the text */
+        width: 100%; /* Full width on mobile */
+        padding-left: 15px;
     }
 
     blockquote p {
-        font-size: 1.4rem; /* Slightly reduce text size */
-    }
-
-    .author-details h4 {
-        font-size: 1rem; /* Adjust font size for the author */
-    }
-
-    .author-details p {
-        font-size: 0.8rem;
-    }
-
-    .star {
-        font-size: 1.3rem;
-    }
-}
-
-/* For mobile screens */
-@media (max-width: 480px) {
-    .testimonial-container {
-        padding: 20px; /* Reduce padding for mobile */
-    }
-
-    .testimonial-image {
-        max-width: 250px; /* Smaller image size on mobile */
-    }
-
-    blockquote p {
-        font-size: 1.2rem; /* Further reduce text size */
-    }
-
-    .author-info {
-        flex-direction: column; /* Stack the author image and details */
-        align-items: center;
+        font-size: 1.2rem; /* Smaller font size on mobile */
     }
 
     .author-image {
-        margin-right: 0;
-        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
     }
 
     .author-details h4 {
@@ -2947,11 +2965,50 @@ blockquote p{
     }
 
     .prev, .next {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .dots {
+        font-size: 0.9rem;
     }
 }
 
+/* Adjust layout for very small screens (e.g. phones) */
+@media (max-width: 480px) {
+    .testimonial-right {
+        width: 100%; /* Full width */
+        padding-left: 10px;
+    }
 
+    blockquote p {
+        font-size: 1.1rem; /* Further decrease font size */
+    }
+
+    .author-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .author-details h4 {
+        font-size: 0.9rem;
+    }
+
+    .author-details p {
+        font-size: 0.75rem;
+    }
+
+    .star {
+        font-size: 1rem;
+    }
+
+    .prev, .next {
+        font-size: 1.5rem;
+    }
+
+    .dots {
+        font-size: 0.8rem;
+    }
+}
 
 .news-section {
     text-align: center;
@@ -3007,6 +3064,30 @@ blockquote p{
     scroll-behavior: smooth; /* Optional: smooth scrolling */
     margin: 0 auto; /* Center the articles section */
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .articles {
+        padding: 20px 50px; /* Reduce padding for medium screens */
+        gap: 15px; /* Adjust gap for better spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .articles {
+        padding: 20px 30px; /* Further reduce padding for smaller screens */
+        gap: 10px; /* Smaller gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .articles {
+        padding: 20px 15px; /* Minimal padding for very small screens */
+        flex-direction: column; /* Stack items vertically if necessary */
+        gap: 15px; /* Adjust gap for vertical stacking */
+        overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+    }
+}
+
 
 .article-card {
     flex: 0 0 auto; /* Prevent flex items from shrinking */
@@ -3055,25 +3136,6 @@ s
     margin-right: 10px; /* Space between the date and comments */
 }
 
-@media (max-width: 768px) {
-    .articles {
-        flex-wrap: nowrap; /* Prevent wrapping on medium screens */
-    }
-
-    .article-card {
-        min-width: 250px; /* Adjust width for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .articles {
-        flex-wrap: nowrap; /* Prevent wrapping on small screens */
-    }
-
-    .article-card {
-        min-width: 200px; /* Further adjust width for mobile */
-    }
-}
 
 
 footer {
@@ -3087,7 +3149,33 @@ footer {
     background-size: 68px 70px; /* Size of the grid squares */
     height: 400px; /* Fixed height for the footer */
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    footer {
+        padding: 30px;
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
 
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px;
+        height: auto; /* Adjust height for smaller screens */
+        justify-content: center; /* Center items for better alignment */
+    }
+
+    footer > div {
+        width: 100%; /* Ensure child divs take full width */
+        text-align: center; /* Center text */
+    }
+}
 .footer-container {
     display: flex;
     justify-content: space-between; /* Distribute space evenly */
@@ -3200,6 +3288,61 @@ footer {
 .extra-links .settings{
     padding-top: 25px;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: rows; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter h1 {
+        font-size: 1.8em; /* Adjust heading size */
+    }
+
+    .contact-info,
+    .links,
+    .extra-links {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+        padding-top: 10px; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .contact-info h3,
+    .links h3,
+    .extra-links h3 {
+        font-size: 1.2em; /* Adjust heading size */
+    }
+
+    .contact-info p,
+    .links ul,
+    .extra-links ul {
+        font-size: 0.8em; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter input[type="email"] {
+        font-size: 0.9em; /* Smaller input font */
+    }
+
+    .newsletter p {
+        font-size: 0.5em; /* Smaller paragraph font */
+    }
+
+    .contact-info h3,
+    .links h3,
+    .extra-links h3 {
+        font-size: 1em; /* Further reduce heading size */
+    }
+
+    .contact-info p,
+    .links ul,
+    .extra-links ul {
+        font-size: 0.7em; /* Further reduce paragraph size */
+    }
+}
 .send-message {
     display: flex;
     align-items: center;
@@ -3240,52 +3383,35 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    footer {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center align items */
-        height: auto; /* Allow height to be flexible */
-    }
-
-    .footer-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align items */
-    }
-
-    .contact-info,
-    .links,
-    .extra-links {
-        margin: 20px 0; /* Margin for vertical spacing */
-        text-align: center; /* Center align text */
-    }
-
-    .newsletter h1 {
-        font-size: 1.5em; /* Reduce font size for smaller screens */
+    .send-message {
+        margin-top: -5%; /* Adjust margin for smaller screens */
     }
 
     .message-button {
-        width: 100px; /* Smaller button on mobile */
-        height: 100px; /* Smaller button on mobile */
+        width: 100px;  /* Reduce button size */
+        height: 100px; /* Reduce button size */
+        font-size: 0.7em; /* Adjust font size */
+    }
+
+    .message-button i {
+        font-size: 0.9em; /* Slightly reduce icon size */
     }
 }
 
 @media (max-width: 480px) {
-    .newsletter h1 {
-        font-size: 1.2em; /* Further reduce font size */
+    .send-message {
+        flex-direction: column; /* Stack button vertically if needed */
+        margin-top: 0; /* Reset margin */
     }
 
-    .newsletter input[type="email"] {
-        font-size: 0.9em; /* Adjust input font size */
+    .message-button {
+        width: 80px;  /* Further reduce button size */
+        height: 80px; /* Further reduce button size */
+        font-size: 0.6em; /* Further adjust font size */
     }
 
-    .contact-info h3,
-    .links h3,
-    .extra-links h3 {
-        font-size: 0.9em; /* Reduce section title size */
-    }
-
-    .contact-info p,
-    .links ul,
-    .extra-links ul {
-        font-size: 0.6em; /* Adjust paragraph font size */
+    .message-button i {
+        font-size: 0.8em; /* Further reduce icon size */
+        margin-bottom: 5px; /* Adjust margin between icon and text */
     }
 }
