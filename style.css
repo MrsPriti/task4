@@ -9,8 +9,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: white;
-    background-image: linear-gradient(rgb(22, 22, 22) 1px, transparent 1px), 
-                      linear-gradient(90deg, rgb(22, 22, 22) 1px, transparent 1px);
+    background-image: linear-gradient(rgb(22, 22, 22) 2px, transparent 1px), 
+                      linear-gradient(90deg, rgb(22, 22, 22) 2px, transparent 1px);
     background-size: 68px 70px; /* Size of the grid squares */
 }
 /* Make fonts and grid responsive for larger screens */
